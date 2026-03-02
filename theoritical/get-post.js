@@ -11,6 +11,6 @@ Example: Fetching user info
 
 Purpose: New data create korte use hoy.
 Body: Required (data send korte).
-Idempotent: ❌ (Same request multiple times → multiple entries).
+Idempotent:  (Same request multiple times → multiple entries).
 Example: Create new user
 */
