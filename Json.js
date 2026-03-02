@@ -4,11 +4,19 @@
 const person = {
     name: "mahbuba",
     age: 22,
+    friends: ["nijhum", "sara", "ruma"],
     isStudent: true
 }
 
-console.log(person); //{ name: 'mahbuba', age: 22, isStudent: true }
-
+console.log(person, typeof person);
+/*{
+  name: 'mahbuba',
+  age: 22,
+  friends: [ 'nijhum', 'sara', 'ruma' ],
+  isStudent: true
+}
+  object
+*/
 
 
 /* JSON.stringify() 
@@ -17,11 +25,20 @@ console.log(person); //{ name: 'mahbuba', age: 22, isStudent: true }
  প্রয়োগ হয় tobe shongkha ebong bnoolean string hoyna ebong key value pair hishebe thake.  
  */
 const jsonString = JSON.stringify(person);
-console.log(jsonString); //{"name":"mahbuba","age":22,"isStudent":true}
+console.log(jsonString, typeof jsonString); //{"name":"mahbuba","age":22,"friends":["nijhum","sara","ruma"],"isStudent":true} string
 
 
 
-// to Parse: you can convert this again to parse that string into an array or object again. 
+// to Parse: you can convert this again to parse 
+// that string into an array or object again. 
 
 const obj = JSON.parse(jsonString);
-console.log(obj) //{ name: 'mahbuba', age: 22, isStudent: true }
+console.log(obj,  typeof obj)
+ /*{
+  name: 'mahbuba',
+  age: 22,
+  friends: [ 'nijhum', 'sara', 'ruma' ],
+  isStudent: true
+}
+  object
+  */
